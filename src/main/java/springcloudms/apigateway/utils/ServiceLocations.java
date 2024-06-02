@@ -5,7 +5,8 @@ public enum ServiceLocations {
     PRODUCT_SERVICE("lb://product-service"),
     ORDER_SERVICE("lb://order-service"),
     INVENTORY_SERVICE("lb://inventory-service"),
-    AUTH_SERVICE("lb://auth-service");
+    AUTH_SERVICE("lb://auth-service"),
+    API_GATEWAY("lb://api-gateway");
 
     private final String uri;
 
