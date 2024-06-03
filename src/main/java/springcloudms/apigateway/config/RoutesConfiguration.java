@@ -20,10 +20,14 @@ public class RoutesConfiguration {
                         .uri(ServiceLocations.ORDER_SERVICE.getUri()))
                 .route("inventory-service-router", r -> r.path("/api/inventory/**")
                         .uri(ServiceLocations.INVENTORY_SERVICE.getUri()))
+                .route("inventory-service-router", r -> r.path("/api/customers/**")
+                        .uri(ServiceLocations.CUSTOMER_SERVICE.getUri()))
                 .route("product_service_swagger", r -> r.path("/v3/api-docs")
                         .uri(ServiceLocations.PRODUCT_SERVICE.getUri()))
                 .route("inventory_service_swagger", r -> r.path("/v3/api-docs")
                         .uri(ServiceLocations.INVENTORY_SERVICE.getUri()))
+                .route("customer_service_swagger", r -> r.path("/v3/api-docs")
+                        .uri(ServiceLocations.CUSTOMER_SERVICE.getUri()))
                 .build();
     }
 }
